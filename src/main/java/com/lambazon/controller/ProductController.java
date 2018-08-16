@@ -29,7 +29,15 @@ public class ProductController {
 		model.addAttribute("prod", productService.product(id));
 		return "product";
 	}
-	
+
+	/*
+		This method returns the total value of all inventory
+	 	@return -> the total value of all inventory
+	Note :
+	Comment Affiliation TODO Auto-generated method stub.
+	Indeed the bugue concerning the total value of the stock displayed on the page produced at 123456,78 has already been corrected.
+	The calculation has already implemented in the method calculateTotalInventoryAmount of ProductController
+	 */
 	private double calculateTotalInventoryAmount() {
 
 		double totalInventoryAmount = 0.0;
