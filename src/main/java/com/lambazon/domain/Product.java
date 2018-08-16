@@ -64,7 +64,10 @@ public class Product {
 	}
 
 	public double getInventoryPrice() {
-		// TODO Auto-generated method stub
-		return 0.0;
+		/*
+		Bug fix of inventory value:
+		@return -> multiplication of the value returned by the getQuantity method by the value returned by the getPrice method
+		 */
+		return getQuantity() * getPrice();
 	}
 }
