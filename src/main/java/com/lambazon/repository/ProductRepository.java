@@ -27,6 +27,8 @@ public class ProductRepository {
 		products.put(++id, new Product(id, 25, 495.00, "HONOR 8 Blue", "Cell Phone"));
 		// Add a new item with a negative price
 		products.put(++id, new Product(id, 25, -495.00, "HONOR 8 green", "Cell Phone"));
+		// Add a new item with a negative quantity
+		products.put(++id, new Product(id, -25, 495.00, "HONOR 8 black", "Cell Phone"));
 
 
 	}
