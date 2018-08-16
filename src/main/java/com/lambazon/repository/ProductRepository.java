@@ -22,6 +22,9 @@ public class ProductRepository {
 		products.put(++id, new Product(id, 30, 69.99, "JVC HAFX8R Headphone", "Riptidz, In-Ear"));
 		products.put(++id, new Product(id, 40, 32.50, "VTech CS6114 DECT 6.0", "Cordless Phone"));
 		products.put(++id, new Product(id, 50, 895.00, "NOKIA OEM BL-5J", "Cell Phone "));
+		// Added 2 new products
+		products.put(++id, new Product(id, 30, 1200.00, "ASUS", "PC Portable "));
+		products.put(++id, new Product(id, 25, 495.00, "HONOR 8 Blue", "Cell Phone"));
 	}
 	
 	public List<Product> products() {
