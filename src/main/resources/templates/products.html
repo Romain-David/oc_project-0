@@ -27,9 +27,12 @@
 			<tr th:each="prod : ${prods}">
 				<td th:text="${prod.name}">Name</td>
 				<td th:text="${prod.description}">Description</td>
+				<!--
+				Showing the word "Details" to replace the product ID
+				-->
 				<td><a href="details.html"
-					th:href="@{/products/{id}/details(id=${prod.id})}"
-					th:text="#{id} + ${prod.id}">Details</a></td>
+					   th:href="@{/products/{id}/details(id=${prod.id})}"
+					   th:text="#{details}">Details</a></td>
 			</tr>
 		</table>
 		
