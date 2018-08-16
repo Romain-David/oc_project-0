@@ -25,6 +25,10 @@ public class ProductRepository {
 		// Added 2 new products
 		products.put(++id, new Product(id, 30, 1200.00, "ASUS", "PC Portable "));
 		products.put(++id, new Product(id, 25, 495.00, "HONOR 8 Blue", "Cell Phone"));
+		// Add a new item with a negative price
+		products.put(++id, new Product(id, 25, -495.00, "HONOR 8 green", "Cell Phone"));
+
+
 	}
 	
 	public List<Product> products() {
